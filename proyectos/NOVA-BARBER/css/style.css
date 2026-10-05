@@ -1,0 +1,489 @@
+/* ========================================
+   NOVA BARBER - ESTILOS PRINCIPALES
+   ======================================== */
+
+
+/* ---------- VARIABLES ---------- */
+
+:root {
+    --negro: #111111;
+    --negro-suave: #181818;
+    --dorado: #c9a227;
+    --blanco: #ffffff;
+    --gris: #b8b8b8;
+    --gris-oscuro: #242424;
+}
+
+
+/* ---------- RESET ---------- */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: var(--negro);
+    color: var(--blanco);
+    line-height: 1.6;
+}
+
+
+/* ---------- HEADER ---------- */
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+
+    background-color: rgba(17, 17, 17, 0.95);
+    border-bottom: 1px solid rgba(201, 162, 39, 0.3);
+}
+
+nav {
+    max-width: 1200px;
+    margin: auto;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 20px 30px;
+}
+
+.logo {
+    color: var(--dorado);
+    text-decoration: none;
+
+    font-size: 1.4rem;
+    font-weight: bold;
+    letter-spacing: 3px;
+}
+
+.nav-links {
+    display: flex;
+    gap: 30px;
+    list-style: none;
+}
+
+.nav-links a {
+    color: var(--blanco);
+    text-decoration: none;
+
+    font-size: 0.9rem;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: var(--dorado);
+}
+
+.menu-toggle {
+    display: none;
+
+    background: none;
+    border: none;
+
+    color: var(--dorado);
+
+    font-size: 1.8rem;
+
+    cursor: pointer;
+}
+
+
+/* ---------- HERO ---------- */
+
+.hero {
+    min-height: 100vh;
+
+    display: flex;
+    align-items: center;
+
+    padding: 120px 30px 80px;
+
+    background:
+        linear-gradient(
+            rgba(0, 0, 0, 0.7),
+            rgba(0, 0, 0, 0.7)
+        ),
+        url("../img/hero.jpg") center / cover no-repeat;
+}
+
+.hero-content {
+    max-width: 1200px;
+    width: 100%;
+    margin: auto;
+}
+
+.hero-subtitle {
+    color: var(--dorado);
+
+    font-size: 0.9rem;
+    font-weight: bold;
+    letter-spacing: 4px;
+
+    margin-bottom: 20px;
+}
+
+.hero h1 {
+    font-size: clamp(3rem, 8vw, 6rem);
+    line-height: 1;
+
+    margin-bottom: 30px;
+}
+
+.hero p:not(.hero-subtitle) {
+    max-width: 550px;
+
+    color: var(--gris);
+    font-size: 1.1rem;
+
+    margin-bottom: 35px;
+}
+
+
+/* ---------- BOTONES ---------- */
+
+.btn {
+    display: inline-block;
+
+    padding: 15px 30px;
+
+    background-color: var(--dorado);
+    color: var(--negro);
+
+    text-decoration: none;
+    font-weight: bold;
+
+    transition:
+        transform 0.3s ease,
+        background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: var(--blanco);
+    transform: translateY(-3px);
+}
+
+
+/* ---------- SECCIONES ---------- */
+
+section {
+    padding: 100px 30px;
+}
+
+.section-title {
+    max-width: 1200px;
+    margin: 0 auto 60px;
+}
+
+.section-title p,
+.section-subtitle {
+    color: var(--dorado);
+
+    font-size: 0.85rem;
+    font-weight: bold;
+    letter-spacing: 3px;
+
+    margin-bottom: 10px;
+}
+
+.section-title h2,
+.about h2 {
+    font-size: clamp(2.2rem, 5vw, 4rem);
+    line-height: 1.1;
+}
+
+
+/* ---------- SERVICIOS ---------- */
+
+.services {
+    background-color: var(--negro-suave);
+}
+
+.services-container {
+    max-width: 1200px;
+    margin: auto;
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.service-card {
+    padding: 40px 30px;
+
+    background-color: var(--gris-oscuro);
+
+    border: 1px solid rgba(201, 162, 39, 0.2);
+
+    transition:
+        transform 0.3s ease,
+        border-color 0.3s ease;
+}
+
+.service-card:hover {
+    transform: translateY(-8px);
+    border-color: var(--dorado);
+}
+
+.service-card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+}
+
+.service-card p {
+    color: var(--gris);
+    margin-bottom: 25px;
+}
+
+.service-card span {
+    color: var(--dorado);
+
+    font-size: 1.4rem;
+    font-weight: bold;
+}
+
+
+/* ---------- SOBRE NOSOTROS ---------- */
+
+.about {
+    min-height: 600px;
+
+    display: flex;
+    align-items: center;
+
+    background-color: var(--negro);
+}
+
+.about-content {
+    max-width: 700px;
+    margin-left: max(0px, calc((100vw - 1200px) / 2));
+}
+
+.about h2 {
+    margin-bottom: 30px;
+}
+
+.about-content > p:not(.section-subtitle) {
+    color: var(--gris);
+
+    font-size: 1.05rem;
+
+    margin-bottom: 20px;
+}
+
+
+/* ---------- GALERÍA ---------- */
+
+.gallery {
+    background-color: var(--negro-suave);
+}
+
+.gallery-container {
+    max-width: 1200px;
+    margin: auto;
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.gallery-container img {
+    width: 100%;
+    height: 400px;
+
+    object-fit: cover;
+
+    display: block;
+
+    transition:
+        transform 0.4s ease,
+        opacity 0.4s ease;
+}
+
+.gallery-container img:hover {
+    transform: scale(1.03);
+    opacity: 0.8;
+}
+
+
+/* ---------- CONTACTO ---------- */
+
+.contact {
+    text-align: center;
+    background-color: var(--negro);
+}
+
+.contact-info {
+    max-width: 600px;
+    margin: auto;
+}
+
+.contact-info p {
+    color: var(--gris);
+
+    font-size: 1.1rem;
+
+    margin-bottom: 15px;
+}
+
+.contact-info .btn {
+    margin-top: 25px;
+}
+
+
+/* ---------- FOOTER ---------- */
+
+footer {
+    padding: 30px;
+
+    text-align: center;
+
+    background-color: #0b0b0b;
+
+    border-top: 1px solid rgba(201, 162, 39, 0.2);
+}
+
+footer p {
+    color: #777;
+    font-size: 0.85rem;
+}
+
+
+/* ========================================
+   RESPONSIVE - TABLET
+   ======================================== */
+
+@media (max-width: 900px) {
+
+    .nav-links {
+        gap: 15px;
+    }
+
+    .services-container {
+        grid-template-columns: 1fr;
+    }
+
+    .gallery-container {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .gallery-container img {
+        height: 350px;
+    }
+}
+
+
+/* ========================================
+   RESPONSIVE - MÓVIL
+   ======================================== */
+
+@media (max-width: 600px) {
+
+    nav {
+        position: relative;
+
+        padding: 15px 20px;
+    }
+
+
+    .logo {
+        font-size: 1rem;
+    }
+
+
+    /* BOTÓN HAMBURGUESA */
+
+    .menu-toggle {
+        display: block;
+
+        background: none;
+        border: none;
+
+        color: var(--dorado);
+
+        font-size: 1.8rem;
+
+        cursor: pointer;
+    }
+
+
+    /* MENÚ */
+
+    .nav-links {
+        position: absolute;
+
+        top: 100%;
+        left: 0;
+
+        width: 100%;
+
+        display: none;
+        flex-direction: column;
+
+        gap: 0;
+
+        background-color: var(--negro);
+
+        border-top: 1px solid rgba(201, 162, 39, 0.3);
+    }
+
+
+    /* MENÚ ABIERTO */
+
+    .nav-links.active {
+        display: flex;
+    }
+
+
+    .nav-links li {
+        width: 100%;
+    }
+
+
+    .nav-links a {
+        display: block;
+
+        width: 100%;
+
+        padding: 18px 20px;
+
+        border-bottom: 1px solid #222;
+    }
+
+
+    section {
+        padding: 80px 20px;
+    }
+
+
+    .hero {
+        padding: 120px 20px 80px;
+    }
+
+
+    .hero h1 {
+        font-size: 3.5rem;
+    }
+
+
+    .gallery-container {
+        grid-template-columns: 1fr;
+    }
+
+
+    .gallery-container img {
+        height: 400px;
+    }
+
+}
