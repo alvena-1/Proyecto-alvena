@@ -1398,3 +1398,55 @@ button {
     }
 
 }
+/* ================================================
+   GOLF PROJECT MOCKUP
+================================================ */
+.project-image.golf {
+    background: radial-gradient(circle at center, #14532d 0%, #0b1f14 55%, #08080b 100%);
+}
+.golf .mockup-body {
+    background: linear-gradient(135deg, #0b1f14, #153d2d);
+}
+.golf .mockup-body small {
+    color: #4ade80;
+}
+.golf .mockup-body h3 {
+    font-size: 2.2rem;
+}
+
+/* ================================================
+   CONTACTO
+================================================ */
+.contact-actions {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    align-items: stretch;
+}
+.contact-details {
+    margin-top: 22px;
+    line-height: 1.9;
+}
+
+/* ================================================
+   BOTÓN FLOTANTE WHATSAPP
+================================================ */
+.wa-float {
+  position: fixed;
+  right: 22px;
+  bottom: 22px;
+  width: 58px;
+  height: 58px;
+  border-radius: 50%;
+  background: #25D366;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.3);
+  z-index: 9999;
+  transition: transform 0.2s ease;
+}
+.wa-float:hover {
+  transform: scale(1.08);
+}
