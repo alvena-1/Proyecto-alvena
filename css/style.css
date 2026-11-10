@@ -4,17 +4,17 @@
 
 :root {
 
-    --background: #08080b;
-    --background-light: #0e0e13;
-    --card: #111117;
+    --background: #05070e;
+    --background-light: #0a0f1c;
+    --card: #0d1424;
 
-    --primary: #7c3aed;
-    --primary-light: #a78bfa;
+    --primary: #1d6dff;
+    --primary-light: #57a5ff;
 
     --text: #f5f5f5;
     --text-secondary: #a1a1aa;
 
-    --border: #27272f;
+    --border: #1c2a44;
 
 }
 
@@ -312,7 +312,7 @@ button {
 
     transform: translateY(-2px);
 
-    background: #6d28d9;
+    background: #1558e0;
 
 }
 
@@ -1429,7 +1429,7 @@ button {
 }
 
 /* ================================================
-   BOTÓN FLOTANTE WHATSAPP
+   BOTï¿½N FLOTANTE WHATSAPP
 ================================================ */
 .wa-float {
   position: fixed;
@@ -1456,7 +1456,7 @@ button {
 ================================================ */
 .hero-case {
   border: 1px solid var(--border);
-  background: linear-gradient(160deg, #111117, #0c0c11);
+  background: linear-gradient(160deg, #0d1424, #060a14);
   border-radius: 14px;
   padding: 30px;
   box-shadow: 0 30px 80px rgba(0,0,0,0.35);
@@ -1529,7 +1529,7 @@ button {
   object-fit: cover;
   object-position: top;
   border-radius: 6px;
-  border: 1px solid #27272f;
+  border: 1px solid #1c2a44;
   display: block;
 }
 
@@ -1567,7 +1567,7 @@ button {
   object-fit: contain;
   object-position: center;
   border-radius: 6px;
-  border: 1px solid #27272f;
+  border: 1px solid #1c2a44;
   display: block;
 }
 .project-gallery .thumbs {
@@ -1599,7 +1599,7 @@ button {
 .price-card.featured {
   border-color: var(--primary);
   box-shadow: 0 0 0 1px var(--primary) inset;
-  background: #14101f;
+  background: #0a1f3d;
 }
 .price-badge {
   position: absolute;
@@ -1743,7 +1743,7 @@ button {
   cursor: pointer;
   transition: 0.2s;
 }
-.custom-form button:hover { background: #6d28d9; }
+.custom-form button:hover { background: #1558e0; }
 .form-note {
   margin-top: 10px;
   font-size: 0.75rem;
@@ -1755,4 +1755,99 @@ button {
   .pricing-grid { grid-template-columns: 1fr; }
   .customize-grid { grid-template-columns: 1fr; gap: 30px; }
   .custom-form .row { grid-template-columns: 1fr; }
+}
+
+/* ================================================
+   IDENTIDAD AZUL (marca ALVENA)
+================================================ */
+:root {
+    --primary-hover: #1558e0;
+    --accent: #22d3ee;
+}
+
+.hero {
+    background-image: radial-gradient(900px 460px at 78% -12%, rgba(29,109,255,0.20), transparent 68%);
+}
+
+.logo {
+    background: linear-gradient(90deg, #ffffff, #8fc4ff);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+.hero-case {
+    box-shadow:
+        0 0 0 1px rgba(34, 211, 238, 0.16),
+        0 30px 80px rgba(0, 0, 0, 0.45);
+}
+
+.hero-case-tag {
+    color: var(--accent);
+}
+
+.price-card.featured {
+    box-shadow:
+        0 0 0 1px rgba(29, 109, 255, 0.55) inset,
+        0 0 45px rgba(29, 109, 255, 0.12);
+}
+
+.custom-form button {
+    background: linear-gradient(135deg, #1d6dff, #0aa2ff);
+}
+
+.custom-form button:hover {
+    background: linear-gradient(135deg, #1558e0, #0891d1);
+}
+
+.price-badge {
+    background: linear-gradient(135deg, #1d6dff, #0aa2ff);
+}
+.navbar {
+    background: rgba(5, 7, 14, 0.88);
+    border-bottom: 1px solid rgba(80, 140, 255, 0.12);
+}
+/* ================================================
+   CTA CONTACTO SOBRE AZUL (contraste)
+================================================ */
+.contact {
+    background: linear-gradient(135deg, #071a45 0%, #124bd0 58%, #1d6dff 100%);
+}
+.contact .section-label {
+    color: #cfe1ff;
+}
+.contact p {
+    color: #dbe8ff;
+}
+.contact-details a {
+    color: #ffffff;
+    text-decoration: none;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.35);
+}
+.contact-details a:hover {
+    border-bottom-color: #ffffff;
+}
+/* ================================================
+   LOGO CON ICONO
+================================================ */
+.logo {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    background: none;
+    -webkit-background-clip: border-box;
+    background-clip: border-box;
+    color: #ffffff;
+}
+.logo-mark {
+    width: 26px;
+    height: 26px;
+    border-radius: 7px;
+    display: block;
+}
+.logo-text {
+    background: linear-gradient(90deg, #ffffff, #8fc4ff);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
 }
