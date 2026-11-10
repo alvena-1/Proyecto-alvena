@@ -1450,3 +1450,309 @@ button {
 .wa-float:hover {
   transform: scale(1.08);
 }
+
+/* ================================================
+   HERO · CASO REAL
+================================================ */
+.hero-case {
+  border: 1px solid var(--border);
+  background: linear-gradient(160deg, #111117, #0c0c11);
+  border-radius: 14px;
+  padding: 30px;
+  box-shadow: 0 30px 80px rgba(0,0,0,0.35);
+}
+.hero-case-tag {
+  font-size: 10px;
+  letter-spacing: 0.18em;
+  color: var(--primary-light);
+  font-weight: 700;
+}
+.hero-case h2 {
+  font-size: 1.5rem;
+  margin: 10px 0 8px;
+  color: #fff;
+  line-height: 1.2;
+}
+.hero-case p {
+  font-size: 0.9rem;
+  color: var(--text-secondary);
+  line-height: 1.6;
+}
+.hero-case a {
+  display: inline-block;
+  margin-top: 16px;
+  color: var(--primary-light);
+  font-weight: 600;
+  font-size: 0.85rem;
+}
+.hero-case a:hover { color: #fff; }
+/* ================================================
+   RESULTADOS
+================================================ */
+.results { background: var(--background-light); }
+.results-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 18px;
+}
+.result-item {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 26px;
+}
+.result-item strong {
+  display: block;
+  font-size: 1.15rem;
+  color: #fff;
+  margin-bottom: 8px;
+}
+.result-item p {
+  font-size: 0.9rem;
+  color: var(--text-secondary);
+  line-height: 1.6;
+}
+
+/* ================================================
+   GALERIA PROYECTO GOLF
+================================================ */
+.project-gallery {
+  display: grid;
+  grid-template-columns: 1.5fr 1fr 1fr;
+  gap: 8px;
+  padding: 12px;
+  background: #0c0c11;
+}
+.project-gallery img {
+  width: 100%;
+  height: 340px;
+  object-fit: cover;
+  object-position: top;
+  border-radius: 6px;
+  border: 1px solid #27272f;
+  display: block;
+}
+
+/* ================================================
+   BADGE PROYECTO
+================================================ */
+.project-badge {
+  font-size: 0.68rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #4ade80;
+  border: 1px solid rgba(74, 222, 128, 0.35);
+  border-radius: 999px;
+  padding: 6px 12px;
+  white-space: nowrap;
+}
+
+@media (max-width: 900px) {
+  .results-grid { grid-template-columns: 1fr; }
+  .project-gallery { grid-template-columns: 1fr; }
+  .project-gallery img { height: 220px; }
+}
+/* Ajuste galeria golf: imagenes completas, sin recorte */
+.project-gallery {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 14px;
+  background: #0c0c11;
+}
+.project-gallery img {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+  object-position: center;
+  border-radius: 6px;
+  border: 1px solid #27272f;
+  display: block;
+}
+.project-gallery .thumbs {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+}
+@media (max-width: 900px) {
+  .project-gallery .thumbs { grid-template-columns: 1fr; }
+}
+/* ================================================
+   PRECIOS
+================================================ */
+.pricing-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+  align-items: stretch;
+}
+.price-card {
+  position: relative;
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  padding: 30px 24px;
+  display: flex;
+  flex-direction: column;
+}
+.price-card.featured {
+  border-color: var(--primary);
+  box-shadow: 0 0 0 1px var(--primary) inset;
+  background: #14101f;
+}
+.price-badge {
+  position: absolute;
+  top: -11px;
+  left: 24px;
+  background: var(--primary);
+  color: #fff;
+  font-size: 0.62rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  padding: 4px 10px;
+  border-radius: 999px;
+}
+.price-tag {
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--text-secondary);
+  font-weight: 700;
+}
+.price-amount {
+  margin: 14px 0 10px;
+  font-size: 0.9rem;
+  color: var(--text-secondary);
+}
+.price-amount strong {
+  display: block;
+  font-size: 2.2rem;
+  color: #fff;
+  letter-spacing: -0.02em;
+  line-height: 1.1;
+}
+.price-card p {
+  font-size: 0.9rem;
+  color: var(--text-secondary);
+  line-height: 1.55;
+  flex: 1;
+}
+.price-link {
+  margin-top: 18px;
+  color: var(--primary-light);
+  font-weight: 600;
+  font-size: 0.85rem;
+}
+.price-link:hover { color: #fff; }
+.pricing-note {
+  text-align: center;
+  margin-top: 24px;
+  font-size: 0.85rem;
+  color: var(--text-secondary);
+}
+
+/* ================================================
+   PERSONALIZA TU WEB
+================================================ */
+.customize-grid {
+  display: grid;
+  grid-template-columns: 0.8fr 1.2fr;
+  gap: 50px;
+  align-items: start;
+}
+.customize-grid h2 {
+  font-size: clamp(2rem, 4vw, 3rem);
+  margin: 12px 0;
+  letter-spacing: -0.03em;
+  line-height: 1;
+}
+.customize-grid p {
+  color: var(--text-secondary);
+  max-width: 380px;
+}
+.custom-form {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  padding: 28px;
+}
+.custom-form fieldset {
+  border: none;
+  margin-bottom: 18px;
+}
+.custom-form legend {
+  font-size: 0.72rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--primary-light);
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+.custom-form fieldset label {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  font-size: 0.85rem;
+  color: var(--text-secondary);
+  margin: 0 16px 8px 0;
+  cursor: pointer;
+}
+.custom-form fieldset input { accent-color: var(--primary); }
+.custom-form .row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 14px;
+  margin-bottom: 14px;
+}
+.custom-form label {
+  display: block;
+  font-size: 0.7rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--text-secondary);
+  margin-bottom: 6px;
+}
+.custom-form input,
+.custom-form select {
+  width: 100%;
+  padding: 11px 12px;
+  background: var(--background);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  color: #fff;
+  font-family: inherit;
+  font-size: 0.9rem;
+}
+.custom-form input:focus,
+.custom-form select:focus {
+  outline: none;
+  border-color: var(--primary);
+}
+.custom-form button {
+  width: 100%;
+  margin-top: 8px;
+  background: var(--primary);
+  color: #fff;
+  border: none;
+  padding: 14px;
+  border-radius: 8px;
+  font-weight: 700;
+  font-size: 0.95rem;
+  cursor: pointer;
+  transition: 0.2s;
+}
+.custom-form button:hover { background: #6d28d9; }
+.form-note {
+  margin-top: 10px;
+  font-size: 0.75rem;
+  color: var(--text-secondary);
+  text-align: center;
+}
+
+@media (max-width: 900px) {
+  .pricing-grid { grid-template-columns: 1fr; }
+  .customize-grid { grid-template-columns: 1fr; gap: 30px; }
+  .custom-form .row { grid-template-columns: 1fr; }
+}
